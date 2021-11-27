@@ -1,0 +1,191 @@
+.card-contnet {
+  position: relative;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 10px;
+  width: 100%;
+
+  .left-card-wrap:hover {
+    box-shadow: 0px 0px 10px 0px #b3bedc;
+  }
+
+  .left-card-wrap {
+    box-shadow: 0px 0px 10px 0px black;
+    transition: 0.4s;
+    margin-top: 19px;
+    margin-bottom: 19px;
+    border-radius: 2px;
+    display: flex;
+    width: 66.66%;
+
+    .inner-left-card {
+      margin: 21px;
+      padding: 10px;
+      width: 66.666%;
+      .left-card-top-text {
+        color: #000000;
+        font-family: "Pattaya", Sans-serif !important;
+        margin: 0px;
+        margin-bottom: 20px;
+      }
+
+      .inner-left-card-desc {
+        font-family: "Roboto", Sans-serif !important;
+        font-size: 14px;
+        color: #7a7a7a;
+        font-weight: 400;
+      }
+    }
+    .inner-right-card {
+      width: 33.333%;
+      padding: 10px;
+      display: flex;
+      position: relative;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+
+      .buttons-wraps {
+        .filled-btn {
+          background-color: #ec5252;
+          padding: 10px 57px;
+          color: white;
+          border: 1px solid #ec5252;
+          font-size: 12px;
+          font-weight: 600;
+          border-radius: 4px;
+          cursor: pointer;
+          margin-bottom: 20px;
+          transition: 0.4s;
+        }
+        .filled-btn:hover {
+          background-color: white;
+          color: #ec5252;
+          border: 1px solid #ec5252;
+        }
+        .outlined-btn {
+          background-color: white;
+          padding: 10px 53px;
+          color: #ec5252;
+          border: 1px solid #ec5252;
+          cursor: pointer;
+          font-size: 12px;
+          font-weight: 600;
+          border-radius: 4px;
+          transition: 0.4s;
+        }
+        :hover {
+          background-color: #ec5252;
+          color: white;
+          border: 1px solid #ec5252;
+        }
+      }
+    }
+  }
+
+  .right-card {
+    width: 33.33%;
+    padding: 10px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+
+    .buttons-wrap {
+      display: grid;
+
+      .register-btn-filled {
+        padding: 10px 53px;
+        background-color: #373c42;
+        border: none;
+        color: #cfcfcf;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        border: 1px solid #373c42;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      .register-btn-filled:hover {
+        background-color: #cfcfcf;
+        color: #373c42;
+        border: 1px solid #373c42;
+      }
+
+      .register-btn-outlined {
+        padding: 10px 53px;
+        background-color: #cfcfcf;
+        cursor: pointer;
+        color: #373c42;
+        border-radius: 20px;
+        border: 1px solid #373c42;
+        transition: 0.3s;
+      }
+      :hover {
+        background-color: #373c42;
+        color: #cfcfcf;
+      }
+    }
+  }
+}
+.desc-div {
+  padding: 10px 20px;
+  color: #7a7a7a;
+
+  .support-div {
+    display: flex;
+
+    .support-inner-wrap {
+      width: 33.33%;
+      text-align: center;
+      padding: 10px 30px;
+
+      .support-icon {
+        font-size: xxx-large;
+        color: #ec5252;
+      }
+      .support-text {
+        color: #ec5252;
+      }
+      .support-desc {
+        color: #7a7a7a;
+      }
+    }
+  }
+}
+
+@media (max-width: 775px) {
+  .card-contnet {
+    flex-direction: column;
+    .left-card-wrap {
+      width: 100%;
+      flex-direction: column;
+
+      .inner-left-card {
+        width: 100%;
+        margin: 10px;
+        .inner-left-card-desc {
+          width: 90%;
+        }
+      }
+      .inner-right-card {
+        width: 100%;
+
+        .buttons-wraps {
+          display: grid;
+        }
+      }
+    }
+    .right-card {
+      width: 100%;
+    }
+  }
+  .desc-div {
+    .support-div {
+      display: grid;
+
+      .support-inner-wrap {
+        width: 100%;
+      }
+    }
+  }
+}

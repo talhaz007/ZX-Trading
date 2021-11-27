@@ -1,0 +1,51 @@
+.contact-wrap-div {
+  margin-top: 71px;
+  margin-bottom: 71px;
+  width: 100%;
+  text-align: center;
+
+  .contact-border {
+    border-bottom: 1px solid lightgray;
+    width: 900px;
+    @media (max-width: 1010px) {
+      width: 800px;
+    }
+
+    @media (max-width: 920px) {
+      width: 700px;
+    }
+
+    @media (max-width: 767px) {
+      width: 600px;
+    }
+    @media (max-width: 640px) {
+      width: 400px;
+    }
+    @media (max-width: 460px) {
+      width: 200px;
+    }
+  }
+}
+.contacts-wrapper {
+  display: flex;
+
+  .contact-icon-wraps {
+    width: 25%;
+    padding: 10px;
+    text-align: center;
+
+    .contact-icon {
+      font-size: xxx-large;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .contacts-wrapper {
+    display: grid;
+
+    .contact-icon-wraps {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,235 @@
+.footer {
+    position: relative;
+    width: 100%;
+    padding: 72px 0 31px;
+    color: white;
+    background-color: #29303B;
+    overflow: hidden;
+    white-space: nowrap;
+    .footer-wrapper {
+        margin: auto;
+        max-width: 1185px;
+        margin: auto;
+        .top {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 58px;
+            .logo-wrapper {
+                display: flex;
+                align-items: baseline;
+            }
+            .links-wrapper {
+                display: flex;
+                .block {
+                    display: flex;
+                    flex-direction: column;
+                    a {
+                        font-family: Verdana;
+                        color: #fff;
+                        font-size: 12px;
+                        margin-bottom: 15px;
+                        cursor: pointer;
+                        opacity: 0.5;
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                    }
+                    &.right {
+                        a {
+                            opacity: 1;
+                            color: #D3D4D8;
+                            font-family: 'Open Sans', sans-serif;
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 16px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+                .middle {
+                    margin: 0 60px;
+                }
+            }
+            .become-partner {
+                width: 213px;
+                span {
+                    white-space: nowrap;
+                }
+            }
+        }
+        .separator-wrapper {
+            opacity: 0.5;
+        }
+        .bottom {
+            opacity: 0.5;
+            font-family: Verdana;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 28px;
+            font-size: 14px;
+        }
+        .top,
+        .bottom,
+        .separator-wrapper {
+            position: relative;
+        }
+    }
+    .overlay {
+        top: 0;
+        left: 0;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(90deg, #29303B 56.26%, rgba(35, 42, 47, 0) 100%);
+    }
+    .footer-bg-image {
+        opacity: 0.4;
+        position: absolute;
+        width: 784px;
+        top: 0;
+        right: 0;
+    }
+    .mobile {
+        display: none;
+    }
+    a{
+        text-decoration: none;
+    }
+    @media (min-width: 1441px) {
+        .footer-bg-image {
+            width: 50%;
+        }
+    }
+    @media (max-width: 1024px) {
+        padding: 24px 0 19px;
+        .footer-wrapper {
+            .top {
+                margin-bottom: 25px;
+                .logo-wrapper {
+                    img {
+                        width: 84px;
+                    }
+                }
+                .links-wrapper {
+                    .block {
+                        a {
+                            font-size: 9px;
+                            margin-bottom: 9px;
+                            &:last-child {
+                                margin-bottom: 0;
+                            }
+                        }
+                        &.right {
+                            flex-direction: column-reverse;
+                            justify-content: flex-end;
+                            a {
+                                margin-bottom: 9px;
+                                font-size: 12px;
+                                &:first-child {
+                                    margin-bottom: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+                .become-partner {
+                    width: 192px;
+
+                    span {
+                        font-size: 14px;
+                    }
+                }
+            }
+            .bottom {
+                margin-top: 17px;
+                opacity: 1;
+                font-size: 9px;
+            }
+        }
+        .footer-bg-image {
+            width: 419.22px;
+        }
+    }
+    @media (max-width: 767px) {
+        padding: 38px 0 24px;
+        .mobile {
+            display: block;
+        }
+        .desktop {
+            display: none;
+        }
+        .footer-wrapper {
+            display: flex;
+            flex-direction: column;
+            .top {
+                display: flex;
+                flex-direction: column;
+                .logo-wrapper {
+                    margin-bottom: 33px;
+                    img {
+                        width: 136px;
+                    }
+                }
+                .links-wrapper {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    .block {
+                        display: flex;
+                        flex-direction: column;
+                        margin-bottom: 34px;
+                        opacity: 1;
+                        a {
+                            margin-bottom: 5px;
+                            color: #fff;
+                            font-size: 12px;
+                            opacity: 0.5;
+                            &:first-child {
+                                opacity: 1;
+                                color: #D3D4D8;
+                                margin-bottom: 21px;
+                                font-weight: 600;
+                            }
+                            &:last-child {
+                                margin-bottom: 0;
+                            }
+                        }
+                        &:last-child {
+                            margin-right: 15%;
+                        }
+                    }
+                }
+                .become-partner {
+                    align-self: center;
+                    margin-bottom: 36px;
+                    max-width: 277px;
+                    width: 100%;
+
+                    span {
+                        font-size: 16px;
+                    }
+                }
+            }
+            .separator-wrapper {
+                opacity: 0.1;
+            }
+            .bottom {
+                display: flex;
+                flex-direction: column;
+                font-size: 12px;
+
+                div:first-child {
+                    margin-bottom: 5px;
+                }
+            }
+        }
+        .footer-bg-image {
+            bottom: 0;
+            top: unset;
+            width: 768px;
+        }
+        .overlay {
+            background: linear-gradient(180deg, #29303B 38.75%, rgba(35, 42, 47, 0.56) 100%);
+        }
+    }
+}

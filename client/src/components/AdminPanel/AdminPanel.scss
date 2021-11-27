@@ -1,0 +1,59 @@
+@import "~bootstrap/scss/bootstrap";
+
+.top-content {
+  padding: 10px;
+  border-bottom: dashed 1px rgb(215, 215, 215);
+  text-align: center;
+  display: flex;
+  background-color: white;
+  justify-content: space-between;
+  align-items: center;
+
+  .search-box {
+    font-size: medium;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 0 15px;
+
+    .icon {
+      position: absolute;
+      right: 0;
+      margin-right: 12px;
+      z-index: 1;
+      color: darkgray;
+    }
+    input {
+      font-size: medium;
+      height: 50px;
+      border: 1px solid gray;
+      color: darkgray;
+      padding-left: 38px;
+      outline: none;
+      padding-right: 38px;
+      width: 350px;
+      border-radius: 8px;
+      &::placeholder {
+        color: darkgray;
+      }
+    }
+  }
+}
+.bg-paginator {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .recordbtn {
+    margin: 0 0 0 0;
+    padding: 5px 10px;
+    border-radius: 6px;
+    width: -webkit-fill-available;
+    width: -moz-available;
+    font-weight: 500;
+    font-size: large;
+    color: white;
+    background-color: #704232;
+    width: fit-content;
+  }
+}
